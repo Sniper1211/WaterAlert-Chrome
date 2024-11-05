@@ -1,17 +1,28 @@
 <!DOCTYPE html>
 <html>
 <head>
+    <meta charset="UTF-8">
     <title>喝水提醒</title>
-    <style>
-        body {
-            width: 200px;
-            text-align: center;
-        }
-    </style>
+    <link rel="stylesheet" type="text/css" href="popup.css">
 </head>
 <body>
-    <h2>别忘了喝水哟！</h2>
-    <button id="drinkButton">已喝水</button>
-    <script src="popup.js"></script>  
+    <div id="container">
+        <h1>喝水提醒</h1>
+        <div class="emoji-container">
+            🥤
+        </div>
+        <div id="status">
+            距离下次喝水还有: <span id="countdown">--:--</span>
+        </div>
+        <div id="progress-container">
+            <div id="progress-bar"></div>
+        </div>
+        <div id="drink-count">
+            今日已喝水: <span id="drinkCount">0</span> 次
+        </div>
+        <button id="drinkButton">已喝水</button>
+        <button id="settingsButton">设置</button>
+    </div>
+    <script src="popup.js"></script>
 </body>
 </html>

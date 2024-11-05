@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <title>喝水提醒设置</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            padding: 20px;
+            width: 300px;
+        }
+        label {
+            display: block;
+            margin-bottom: 10px;
+        }
+        input[type="number"] {
+            width: 60px;
+        }
+        button {
+            margin-top: 10px;
+        }
+    </style>
+</head>
+<body>
+    <h1>喝水提醒设置</h1>
+    <label>
+        提醒间隔（分钟）：
+        <input type="number" id="reminderInterval" min="1" max="180">
+    </label>
+    <button id="saveButton">保存设置</button>
+    <p id="status"></p>
+
+    <script src="options.js"></script>
+</body>
+</html>
